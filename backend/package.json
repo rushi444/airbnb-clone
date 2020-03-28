@@ -1,18 +1,24 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/server.js"
-  },
-  "keywords": [],
-  "author": "rushi",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-graphql": "^0.9.0",
-    "graphql": "^14.6.0",
-    "pg": "^7.18.2"
-  }
+   "name": "backend",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/node": "^13.9.5",
+      "ts-node": "8.8.1",
+      "tslint": "^6.1.0",
+      "tslint-config-prettier": "^1.18.0",
+      "typescript": "3.8.3"
+   },
+   "dependencies": {
+      "apollo-server": "^2.11.0",
+      "docker-nodemon": "^1.11.0",
+      "graphql": "^14.6.0",
+      "nodemon": "^2.0.2",
+      "pg": "^7.3.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.24"
+   },
+   "scripts": {
+      "start": "nodemon --exec ts-node src/index.ts "
+   }
 }

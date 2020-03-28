@@ -13,6 +13,7 @@ services:
       - DB_NAME=backend
       - DB_USER=postgres
       - DB_PASS=supersecretpassword
+    restart: always
     depends_on:
       - db
   db:
